@@ -43,6 +43,7 @@ app.post('/terminals', (req, res) => {
     res.end()
 })
 
+//resize时，发送的接口，调用resize方法
 app.post('/terminals/:pid/size', (req, res) => {
     let pid = parseInt(req.params.pid),
         cols = parseInt(req.query.cols),
@@ -54,6 +55,7 @@ app.post('/terminals/:pid/size', (req, res) => {
     res.end()
 })
 
+//建立websocket
 app.ws('/terminals/:pid', function (ws, req) {
     const term = terminals[parseInt(req.params.pid)]
     console.log('Connected to terminal ' + term.pid)
