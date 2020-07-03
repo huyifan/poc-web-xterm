@@ -3,6 +3,7 @@ const pty = require('node-pty')
 const express = require('express')
 const expressWs = require('express-ws')
 const USE_BINARY = os.platform() !== "win32";
+const TERMINAL_PORT=4000
 
 const app = express()
 const terminals = {}, logs = {}
@@ -87,12 +88,11 @@ app.ws('/terminals/:pid', function (ws, req) {
 
 })
 
+const host = os.platform() === 'win32' ? '127.0.0.1' : '0.0.0.0';
 
-const port =4000, host = os.platform() === 'win32' ? '127.0.0.1' : '0.0.0.0';
-
-console.log('App listening to http://127.0.0.1:' + port);
-app.listen(port, host);
-console.log("wss linsting on " + port)
+console.log('App listening to http://127.0.0.1:' + TERMINAL_PORT);
+app.listen(TERMINAL_PORT, host);
+console.log("wss linsting on " + TERMINAL_PORT)
 
 
 

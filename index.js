@@ -1,8 +1,7 @@
 import {Terminal} from 'xterm'
 import {AttachAddon} from 'xterm-addon-attach';
-
+const TERMINAL_PORT=4000
 const terminal = new Terminal();
-const TERMINAL_PORT=8888
 const termDom=document.getElementById('terminal')
 
 let pid,socketURL,webSocket
