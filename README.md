@@ -9,6 +9,14 @@ https://www.jianshu.com/p/fc831ebfd9c1
 ![demo](https://upload-images.jianshu.io/upload_images/5471980-4b1028e097383eb7.gif?imageMogr2/auto-orient/strip)
 
 
+# Different Version
+
+In master version ,it showed the base usage of xterm by js and html.
+
+In master-react verison ,use react to rebuild project based on master branch and add resize function .
+
+In electron version , I use react/electron/ to build a xterm application ,which contains the resize function
+
 # USE
 
 > 注意：在使用之前，可能需要安装一些依赖，请仔细阅读上面简书博客链接或xterm、node-pty官网文档，务必保证相关环境的一致；
