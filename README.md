@@ -1,7 +1,8 @@
 # poc-web-xterm
 use basical stack such as webpack/html/node to create a minimize xterm project which can use  command as native cmd .
 
-
+博客说明可以查看：
+https://www.jianshu.com/p/fc831ebfd9c1
 
 # EXAMPLE
 
@@ -10,6 +11,9 @@ use basical stack such as webpack/html/node to create a minimize xterm project w
 
 # USE
 
+> 注意：在使用之前，可能需要安装一些依赖，请仔细阅读上面简书博客链接或xterm、node-pty官网文档，务必保证相关环境的一致；
+ 
+ 
 1、
 > npm install 
 
